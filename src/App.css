@@ -23,6 +23,10 @@
     margin: 0 auto;
 }
 
+.hero-button:hover {
+    cursor: pointer;
+}
+
 .app-title {
     font-size: 3rem;
     font-weight: bold;
@@ -36,7 +40,6 @@
     margin: 1rem auto;
     height: 40%;
     width: 40%;
-    /* background: red; */
 }
 
 .lead {
