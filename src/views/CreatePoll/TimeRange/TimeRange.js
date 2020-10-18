@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import '../CreatePoll.css';
 
 const TIMES = [
     "12:00am",
@@ -29,20 +30,54 @@ const TIMES = [
 ]
 
 export default () => {
+    const [fromDropdown, setFromDropdown] = useState("");
+    const [toDropdown, setToDropdown] = useState("");
+
+    const [secondDropdownStart, setSecondDropdownStart] = useState(1);
+
+    useEffect(() => {
+        /* Whenever the from dropdown changes, change secondDropDownStart */
+
+    }, [fromDropdown])
+
+    const renderSecondDropdownOptions = () => {
+        /* Take the elements from secondDropdownStart onward */
+        
+        /**
+         *  {
+                            TIMES.map((time) => {
+                                return (
+                                    <option>{time}</option>
+                                )
+                            })
+                        }
+         */
+    }
+
     return (
         <>
-             <div className="time-range-input-wrapper">
-                <label className="range-label">From:</label>
-                <select className="">
-                    <option>12:00AM</option>
-                </select>
-            </div>
+            <label className="input-label">Time Range:</label>
+            <div className="time-range-input-container">
+                <div className="time-range-input-wrapper">
+                    <label className="range-label">From:</label>
+                    <select value={fromDropdown} onChange={(e) => setFromDropdown(e.target.value)} className="">
+                        {
+                            TIMES.map((time) => {
+                                return (
+                                    <option>{time}</option>
+                                )
+                            })
+                        }
+                    </select>
+                </div>
 
-            <div className="time-range-input-wrapper">
-                <label className="range-label">To:</label>
-                <select className="">
-                    <option>12:00AM</option>
-                </select>
+                <div className="time-range-input-wrapper">
+                    <label className="range-label">To:</label>
+                    <select value={toDropdown} onChange={e => setToDropdown(e.target.value)} className="">
+                        {renderSecondDropdownOptions()}
+                    </select>
+                </div>
+                
             </div>
         </>
     );

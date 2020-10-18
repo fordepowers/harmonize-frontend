@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './CreatePoll.css'
+import TimeRange from './TimeRange/TimeRange';
 
 const TIMES = [
     "12:00am",
@@ -54,23 +55,7 @@ export default () => {
                 {
                     !isAllDay ? (
                         <>
-                            <label className="input-label">Time Range:</label>
-                            <div className="time-range-input-container">
-                                <div className="time-range-input-wrapper">
-                                    <label className="range-label">From:</label>
-                                    <select className="">
-                                        <option>12:00AM</option>
-                                    </select>
-                                </div>
-
-                                <div className="time-range-input-wrapper">
-                                    <label className="range-label">To:</label>
-                                    <select className="">
-                                        <option>12:00AM</option>
-                                    </select>
-                                </div>
-                              
-                            </div>
+                            <TimeRange />
                         </>
                     ) : null
                 }
