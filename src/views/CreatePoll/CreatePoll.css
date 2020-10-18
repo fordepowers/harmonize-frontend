@@ -1,0 +1,87 @@
+.CreatePoll {
+    height: 100vh;
+    background: #fdfdfd;
+    display: grid;
+    place-items: center;
+}
+
+.CreatePoll .container {
+    max-width: 700px;
+    width: 100%;
+    padding: 0 2rem;
+    /* background-color: white; */
+}
+
+.page-heading {
+    font-size: 36px;
+    font-family: 'Inter';
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.input-label {
+    display: block;
+    font-size: 18px;
+    font-family: 'Inter';
+    /* font-weight: bold; */
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.input {
+    font-size: 18px;
+    background-color: #eee;
+    border: none;
+    padding: 8px;
+    display: block;
+    margin: 0;
+   
+    
+}
+.input.title {
+    margin-bottom: 16px;
+    width: 300px;
+}
+.create-btn {
+    padding: 12px 24px;
+    font-size: 14px;
+    background: #5222D0;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 9999px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 1rem auto;
+    font-family:"Inter";
+}
+
+.date-input-container {
+    display: flex;
+    width: 300px;
+    align-items: center;
+    /* background: red;  */
+    margin-bottom: 16px;
+}
+
+#date {
+    width: 100%;
+}
+
+#allDay {
+    width: 16px; 
+    height: 16px;
+ 
+}
+
+.checkbox-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+}
+.all-day-label {
+    width: 70px;
+    font-family: 'Inter';
+
+}

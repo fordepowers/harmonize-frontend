@@ -7,6 +7,7 @@ import {
   Link
 } from "react-router-dom";
 import Home from './views/Home/Home';
+import CreatePoll from './views/CreatePoll/CreatePoll';
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route path="/create">
+            <CreatePoll />
           </Route>
         </Switch>
       </Router>
