@@ -1,0 +1,55 @@
+.Home {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #fff;
+}
+
+.Home .container {
+    max-width: 50rem;
+    width: 100%;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.hero-button {
+    padding: 12px 24px;
+    font-size: 14px;
+    background: #5222D0;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 9999px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 auto;
+    font-family:"Inter";
+}
+
+.hero-button:hover {
+    cursor: pointer;
+}
+
+.app-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #232527;
+    text-align: center;
+    margin: 0;
+    font-family:"Inter"
+}
+
+.hero-img {
+    display: block;
+    margin: 1rem auto;
+    height: 40%;
+    width: 40%;
+}
+
+.lead {
+    text-align: center;
+    color: #444;
+    margin: 0;
+    margin-top: 12px;
+    font-family:"Inter"
+}
