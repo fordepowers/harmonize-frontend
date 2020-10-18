@@ -9,6 +9,7 @@ import {
 import Home from './views/Home/Home';
 import CreatePoll from './views/CreatePoll/CreatePoll';
 import AnswerPoll from './views/AnswerPoll/AnswerPoll';
+import Overview from './views/Overview/Overview';
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
           </Route>
           <Route path="/answer">
             <AnswerPoll />
+          </Route>
+          <Route path="/overview">
+            <Overview />
           </Route>
         </Switch>
       </Router>
