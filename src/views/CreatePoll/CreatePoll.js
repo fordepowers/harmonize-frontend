@@ -54,7 +54,6 @@ export default () => {
                 {
                     !isAllDay ? (
                         <>
-
                             <label className="input-label">Time Range:</label>
                             <div className="time-range-input-container">
                                 <div className="time-range-input-wrapper">
