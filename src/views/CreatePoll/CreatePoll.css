@@ -11,8 +11,8 @@
     padding: 0 2rem;
 }
 
-.page-heading {
-    font-size: 36px;
+.CreatePoll .page-heading {
+    font-size: 28px;
     font-family: 'Inter';
     margin: 0;
     margin-bottom: 16px;
