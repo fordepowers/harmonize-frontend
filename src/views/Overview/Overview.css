@@ -1,0 +1,35 @@
+.Overview {
+    height: 100vh;
+    background: #fdfdfd;
+    display: grid;
+    place-items: center;
+}
+
+.Overview .container {
+    max-width: 700px;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.Overview .page-heading {
+    font-size: 24px;
+    margin: 0;
+    color: #222;
+    font-family: 'Inter';
+}
+
+.Overview .event-title,
+.Overview .event-date  {
+    font-size: 20px;
+    margin: 0;
+    color: #222;
+    font-family: 'Inter';
+}
+
+.Overview .event-date {
+    font-size: 20px;
+    margin: 0;
+    color: #222;
+    font-family: 'Inter';
+    margin-bottom: 1rem;
+}
