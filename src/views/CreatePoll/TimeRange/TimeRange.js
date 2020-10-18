@@ -37,21 +37,52 @@ export default () => {
 
     useEffect(() => {
         /* Whenever the from dropdown changes, change secondDropDownStart */
+        
+        /* IN C++ FOR BEN
+
+            int i = 0;
+            int y;
+
+            while(!y)
+            {
+                if (TIMES[i] != SetFromDropdown)
+                {
+                    i++
+                }
+                else
+                {
+                    y = i;
+                }
+            }
+
+            return TIMES[y];
+
+
+            EDGE CASES:
+            if From == 11:00PM && To == 11:00PM then idek
+
+            if From == To then change 'To' to 'To + 1' in TIMES[]
+        */
+
+       let x = TIMES.findIndex((x) => x === fromDropdown);
+            
+       setSecondDropdownStart(x);
+       
 
     }, [fromDropdown])
 
     const renderSecondDropdownOptions = () => {
         /* Take the elements from secondDropdownStart onward */
         
-        /**
-         *  {
-                            TIMES.map((time) => {
+        let forwardDates = TIMES.slice(secondDropdownStart)
+                        
+                            return forwardDates.map((time) => {
                                 return (
                                     <option>{time}</option>
                                 )
                             })
-                        }
-         */
+                        
+         
     }
 
     return (
